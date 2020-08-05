@@ -28,6 +28,7 @@ public class GetStartedActivity extends AppCompatActivity {
                 Intent mainIntent = new Intent(GetStartedActivity.this, ModulesActivity.class);
 
                 GetStartedActivity.this.startActivity(mainIntent);
+                GetStartedActivity.this.finish();
             }
         });
     }
