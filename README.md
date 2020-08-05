@@ -6,6 +6,6 @@ Tracking your app development journey - app created through the MTN App Academy.
 * Button will show Toast or Log sample data.
 
 ### Examples
-* SplashActivity.java - Its screen is clickable.
-* SplashActivity.java - It will pop up a dialog box when you click and hold.
-* GetStartedActivity.java - Get started button is clickable.
+* SplashActivity.java - A simple click will show "Please wait".
+* SplashActivity.java - A click and hold will show a dialog box.
+* GetStartedActivity.java - A click on menu will show a dialog box.
