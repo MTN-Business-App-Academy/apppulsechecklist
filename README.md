@@ -1,5 +1,12 @@
-# 6. Start a new activity
+# 7. Device features
 Tracking your app development journey - app created through the MTN App Academy.
-### Please note:
-* Application launches at SplashActivity.java then it launches GetStartedActivity.java after 3 seconds.
-* Get Started button starts module list activity.
+### Contents:
+* Request permissions.
+* Take a picture.
+* Select picture from gallery.
+* Show contact list.
+* Show location.
+* Play sound.
+* Play video.
+* Calendar widget
+* Store data and access in SQLLite.
