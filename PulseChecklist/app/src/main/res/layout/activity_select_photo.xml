@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".devicefeatures.CaptureImageActivity">
+    tools:context=".devicefeatures.SelectPhotoActivity">
+
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,8 +14,8 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            app:title="Capture Image"
-            app:subtitle="Capture from your camera"
+            app:title="Select Image"
+            app:subtitle="Select image from your device"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
@@ -58,7 +59,7 @@
 
             <Button
                 android:id="@+id/capture"
-                android:text="Capture Image"
+                android:text="Select Image"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="20dp"
@@ -68,6 +69,7 @@
         </RelativeLayout>
 
     </RelativeLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

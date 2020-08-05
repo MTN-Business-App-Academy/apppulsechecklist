@@ -12,11 +12,13 @@ import co.za.mtn.pulsechecklist.adapters.DeviceFeaturesArrayAdapter;
 import co.za.mtn.pulsechecklist.adapters.ModulesArrayAdapter;
 import co.za.mtn.pulsechecklist.data.DeviceFeature;
 import co.za.mtn.pulsechecklist.devicefeatures.CaptureImageActivity;
+import co.za.mtn.pulsechecklist.devicefeatures.SelectPhotoActivity;
 
 public class DeviceFeaturesActivity extends AppCompatActivity {
 
     private DeviceFeature[] features = {
-            new DeviceFeature("Camera", R.drawable.pulse_logo, 10, CaptureImageActivity.class)
+            new DeviceFeature("Camera image", R.drawable.pulse_logo, 10, CaptureImageActivity.class),
+            new DeviceFeature("Select image", R.drawable.pulse_logo, 10, SelectPhotoActivity.class)
     };
 
     @Override
