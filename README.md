@@ -9,4 +9,4 @@ Tracking your app development journey - app created through the MTN App Academy.
 ### Examples
 * SplashActivity.java - A simple click will show Toast.
 * SplashActivity.java - A click and hold will show a dialog box.
-* GetStartedActivity.java - A click on menu will show a Toast.
+* GetStartedActivity.java - A click on top menu will show a Toast.
