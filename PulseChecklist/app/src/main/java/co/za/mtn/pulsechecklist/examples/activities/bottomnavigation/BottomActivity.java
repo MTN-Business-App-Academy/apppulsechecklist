@@ -10,6 +10,8 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import co.za.mtn.pulsechecklist.R;
+
 public class BottomActivity extends AppCompatActivity {
 
     @Override

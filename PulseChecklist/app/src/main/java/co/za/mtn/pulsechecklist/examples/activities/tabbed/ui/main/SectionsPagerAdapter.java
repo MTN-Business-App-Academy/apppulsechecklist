@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import co.za.mtn.pulsechecklist.examples.activities.tabbed.R;
+import co.za.mtn.pulsechecklist.R;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

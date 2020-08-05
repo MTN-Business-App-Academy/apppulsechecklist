@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
+import co.za.mtn.pulsechecklist.R;
+
 public class FirstFragment extends Fragment {
 
     @Override

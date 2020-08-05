@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
-import co.za.mtn.pulsechecklist.examples.activities.bottomnavigation.R;
+import co.za.mtn.pulsechecklist.R;
 
 public class HomeFragment extends Fragment {
 
