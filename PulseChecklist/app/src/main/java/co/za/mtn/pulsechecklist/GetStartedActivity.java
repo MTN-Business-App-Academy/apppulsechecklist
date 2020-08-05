@@ -7,6 +7,8 @@ import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class GetStartedActivity extends AppCompatActivity {
@@ -17,6 +19,14 @@ public class GetStartedActivity extends AppCompatActivity {
         setContentView(R.layout.activity_get_started);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Button button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(view.getContext(), "Get started clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -28,7 +38,7 @@ public class GetStartedActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(item.getItemId() == R.id.about) {
-            Toast.makeText(this,"About MTN clicked", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Go to mtn.co.za", Toast.LENGTH_SHORT).show();
         }
         return true;
     }
