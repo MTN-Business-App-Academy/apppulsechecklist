@@ -8,7 +8,7 @@ Tracking your app development journey - app created through the MTN App Academy.
 4. Click finish
 5. Sit back and allow Android studio to do its work.
 
-### Types of activities to try
+### Other activities to try
 * Basic Activity
 * Bottom Navigation Activity
 * Navigation Drawer Activity
