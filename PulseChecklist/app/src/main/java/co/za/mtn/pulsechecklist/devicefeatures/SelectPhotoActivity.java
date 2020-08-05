@@ -15,6 +15,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import co.za.mtn.pulsechecklist.R;
 
@@ -61,22 +62,19 @@ public class SelectPhotoActivity extends AppCompatActivity implements AdapterVie
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode != RESULT_CANCELED) {
-            if (requestCode == 0) {
-                Uri selectedImage =  data.getData();
-                String[] filePathColumn = {MediaStore.Images.Media.DATA};
-                if (selectedImage != null) {
-                    Cursor cursor = getContentResolver().query(selectedImage, filePathColumn, null, null, null);
-                    if (cursor != null) {
-                        cursor.moveToFirst();
+        if (resultCode == RESULT_OK && data != null) {
+            Uri selectedImage = data.getData();
+            String[] filePathColumn = { MediaStore.Images.Media.DATA };
 
-                        int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
-                        String picturePath = cursor.getString(columnIndex);
-                        imageView.setImageBitmap(BitmapFactory.decodeFile(picturePath));
-                        cursor.close();
-                    }
-                }
-            }
+            Cursor cursor = getContentResolver().query(selectedImage, filePathColumn, null, null, null);
+            cursor.moveToFirst();
+
+            int columnIndex = cursor.getColumnIndex(filePathColumn[0]);
+            String picturePath = cursor.getString(columnIndex);
+            cursor.close();
+
+            Bitmap bitmap = BitmapFactory.decodeFile(picturePath);
+            imageView.setImageBitmap(bitmap);
         }
     }
 
