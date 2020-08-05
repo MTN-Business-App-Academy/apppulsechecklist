@@ -4,7 +4,7 @@ Tracking your app development journey - app created through the MTN App Academy.
 1. Right click on your “root package”
 2. New > Activity > Empty Activity
   * Enter activity name
-  * Specify configurations (Languag choose Java).
+  * Specify configurations (Language choose Java).
 4. Click finish
 5. Sit back and allow Android studio to do its work.
 
