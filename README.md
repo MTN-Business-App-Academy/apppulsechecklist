@@ -1,4 +1,12 @@
-# 7. Pass data to next activity
+# 8. Device features
 Tracking your app development journey - app created through the MTN App Academy.
-### Please note:
-* Click on a module item which should take you to a Module Activity.
+### Contents:
+* Request permissions.
+* Take a picture.
+* Select picture from gallery.
+* Show contact list.
+* Show location.
+* Play sound.
+* Play video.
+* Calendar widget.
+* Store data and access in SQLLite.
