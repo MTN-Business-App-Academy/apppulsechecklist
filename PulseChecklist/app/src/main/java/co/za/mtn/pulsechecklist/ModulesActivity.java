@@ -2,6 +2,7 @@ package co.za.mtn.pulsechecklist;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -13,6 +14,7 @@ import co.za.mtn.pulsechecklist.adapters.ModulesArrayAdapter;
 import co.za.mtn.pulsechecklist.data.Module;
 
 public class ModulesActivity extends AppCompatActivity {
+    public static String MODULE = "module";
 
     private Module[] modules = {
             new Module("Module: Let's build", R.drawable.pulse_logo),
@@ -31,7 +33,9 @@ public class ModulesActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(view.getContext(), modules[i].getName() + " clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(ModulesActivity.this, ModuleActivity.class);
+                intent.putExtra(MODULE, modules[i]);
+                ModulesActivity.this.startActivity(intent);
             }
         });
 

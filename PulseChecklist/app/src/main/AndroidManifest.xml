@@ -9,11 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ModulesActivity">
-        </activity>
-        <activity android:name=".GetStartedActivity">
-
-        </activity>
+        <activity android:name=".ModuleActivity"></activity>
+        <activity android:name=".ModulesActivity"></activity>
+        <activity android:name=".GetStartedActivity"></activity>
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
