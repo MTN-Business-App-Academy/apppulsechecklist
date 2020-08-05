@@ -41,6 +41,7 @@ public class GetLocationActivity extends AppCompatActivity implements LocationLi
                     requestPermission();
                     return;
                 }
+                Toast.makeText(view.getContext(), "Please wait", Toast.LENGTH_SHORT).show();
                 locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 10, GetLocationActivity.this);
             }
         });
@@ -49,7 +50,6 @@ public class GetLocationActivity extends AppCompatActivity implements LocationLi
     private void requestPermission() {
         String[] PERMISSIONS = {android.Manifest.permission.ACCESS_COARSE_LOCATION, android.Manifest.permission.ACCESS_FINE_LOCATION};
         ActivityCompat.requestPermissions(GetLocationActivity.this, PERMISSIONS, 0);
-
     }
 
     @Override
@@ -89,7 +89,9 @@ public class GetLocationActivity extends AppCompatActivity implements LocationLi
         }
 
         String stringAddress = longitude + "\n" + latitude + "\n\nMy Current City is: " + cityName;
+
         TextView textView = findViewById(R.id.textView);
+
         textView.setText(stringAddress);
     }
 }
