@@ -3,7 +3,9 @@ package co.za.mtn.pulsechecklist;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,5 +30,14 @@ public class ModuleActivity extends AppCompatActivity {
         moduleName.setText(module.getName());
         imageView.setImageResource(module.getImageReference());
         moduleLabel.setText(module.getLabel());
+
+        findViewById(R.id.explore).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mainIntent = new Intent(ModuleActivity.this, DeviceFeaturesActivity.class);
+
+                ModuleActivity.this.startActivity(mainIntent);
+            }
+        });
     }
 }

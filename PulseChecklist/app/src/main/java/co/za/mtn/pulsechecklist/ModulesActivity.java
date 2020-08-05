@@ -33,6 +33,11 @@ public class ModulesActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(i > 0) {
+                    Toast.makeText(view.getContext(), modules[i].getName() + " is not available yet.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 Intent intent = new Intent(ModulesActivity.this, ModuleActivity.class);
                 intent.putExtra(MODULE, modules[i]);
                 ModulesActivity.this.startActivity(intent);

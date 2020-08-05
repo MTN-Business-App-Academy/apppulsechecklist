@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/featurePicture"
+        android:src="@drawable/pulse_logo"
+        android:layout_margin="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+    </ImageView>
+
+   <TextView
+       android:id="@+id/featureName"
+       android:text="Camera"
+       android:textStyle="bold"
+       android:textSize="18dp"
+       android:textColor="@android:color/black"
+       android:lines="1"
+       android:layout_marginTop="10dp"
+       android:layout_toRightOf="@id/featurePicture"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/featurePoints"
+        android:text="10 points"
+        android:textSize="14dp"
+        android:textColor="@android:color/darker_gray"
+        android:lines="1"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/featureName"
+        android:layout_toRightOf="@id/featurePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
