@@ -1,4 +1,4 @@
-# 3. Add Layouts, views
+# 3. Add Layouts and views
 Tracking your app development journey - app created through the MTN App Academy.
 ### Please note:
 * This section is intended for you to browse and experiment with layouts and views.
