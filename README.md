@@ -1,4 +1,4 @@
-# 7. Device features
+# 8. Device features
 Tracking your app development journey - app created through the MTN App Academy.
 ### Contents:
 * Request permissions.
