@@ -1,4 +1,4 @@
-# 1. Create a new Activity
+# 2. Create a new Activity
 Tracking your app development journey - app created through the MTN App Academy.
 ### Steps to follow
 1. Right click on your “root package”
