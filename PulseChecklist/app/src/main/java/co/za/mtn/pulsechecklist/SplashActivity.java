@@ -4,10 +4,13 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.Space;
 import android.widget.Toast;
 
 public class SplashActivity extends AppCompatActivity {
@@ -38,6 +41,19 @@ public class SplashActivity extends AppCompatActivity {
                 return false;
             }
         });
+
+        new Handler().postDelayed(new Runnable(){
+            @Override
+            public void run() {
+                //Create an Intent that will start the GetStartedActivity.
+                Intent mainIntent = new Intent(SplashActivity.this, GetStartedActivity.class);
+
+                SplashActivity.this.startActivity(mainIntent);
+
+                // Kill activity
+                SplashActivity.this.finish();
+            }
+        }, 3000);
     }
 
     public void mtnPop() {

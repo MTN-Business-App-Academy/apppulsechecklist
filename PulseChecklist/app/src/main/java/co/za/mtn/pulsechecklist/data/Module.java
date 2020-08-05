@@ -1,6 +1,8 @@
 package co.za.mtn.pulsechecklist.data;
 
-public class Module {
+import java.io.Serializable;
+
+public class Module implements Serializable {
     private String name;
     private int imageReference;
     private String label;

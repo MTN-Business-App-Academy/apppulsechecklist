@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -24,7 +25,9 @@ public class GetStartedActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(view.getContext(), "Get started clicked", Toast.LENGTH_SHORT).show();
+                Intent mainIntent = new Intent(GetStartedActivity.this, ModulesActivity.class);
+
+                GetStartedActivity.this.startActivity(mainIntent);
             }
         });
     }
