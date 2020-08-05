@@ -9,4 +9,3 @@ Tracking your app development journey - app created through the MTN App Academy.
 * Play sound.
 * Play video.
 * Calendar widget.
-* Store data and access in SQLLite.
