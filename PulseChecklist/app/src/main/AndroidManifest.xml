@@ -9,28 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".examples.activities.bottomnavigation.BottomActivity"
-            android:label="@string/title_activity_bottom"></activity>
-        <activity
-            android:name=".examples.activities.navigationdrawer.NavigationDrawerActivity"
-            android:label="@string/title_activity_navigation_drawer"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".examples.activities.tabbed.TabbedActivity"
-            android:label="@string/title_activity_tabbed"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".examples.activities.basic.BasicActivity"
-            android:label="@string/title_activity_basic"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".GetStartedActivity">
+        <activity android:name=".ModulesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".GetStartedActivity"></activity>
         <activity android:name=".SplashActivity">
 
         </activity>
