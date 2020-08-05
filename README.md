@@ -1,14 +1,18 @@
-# 1. Create a new Android project
+# 1. Create a new Activity
 Tracking your app development journey - app created through the MTN App Academy.
 ### Steps to follow
-1. Open Android studio.
-2. Click “Start a new Android Studio project”.
-3. Click “Empty Activity” and then “Next”.
-4. Configure your project and click “Next”.
-5. Application name and package (Must be unique).
-6. Language (Java) and Minimum SDK (23).
-7. Let Android studio work its magic.
+1. Right click on your “root package”
+2. New > Activity > Empty Activity
+  * Enter activity name
+  * Specify configurations (Languag choose Java).
+4. Click finish
+5. Sit back and allow Android studio to do its work.
+
+### Types of activities to try
+* Basic Activity
+* Bottom Navigation Activity
+* Navigation Drawer Activity
+* Tabbed Activity
 
 ### References
-* Download Android studio - https://developer.android.com/studio
-* Java SDK - https://www.oracle.com/za/java/technologies/javase/javase-jdk8-downloads.html 
+* Types of activities - https://developer.android.com/studio/projects/templates
