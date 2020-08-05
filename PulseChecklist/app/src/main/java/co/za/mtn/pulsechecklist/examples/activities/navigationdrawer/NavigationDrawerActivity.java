@@ -1,4 +1,4 @@
-package co.za.mtn.pulsechecklist.examples.activities.drawer;
+package co.za.mtn.pulsechecklist.examples.activities.navigationdrawer;
 
 import android.os.Bundle;
 import android.view.View;
