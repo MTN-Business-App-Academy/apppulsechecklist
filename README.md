@@ -1,6 +1,6 @@
-# 8. Device features
+# Basic app
 Tracking your app development journey - app created through the MTN App Academy.
-### Contents:
+### Capabilities:
 * Request permissions (See select picture).
 * Take a picture.
 * Select picture from gallery. (Fix it challenge)
