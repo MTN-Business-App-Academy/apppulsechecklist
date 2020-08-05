@@ -12,6 +12,7 @@ import co.za.mtn.pulsechecklist.adapters.DeviceFeaturesArrayAdapter;
 import co.za.mtn.pulsechecklist.adapters.ModulesArrayAdapter;
 import co.za.mtn.pulsechecklist.data.DeviceFeature;
 import co.za.mtn.pulsechecklist.devicefeatures.CaptureImageActivity;
+import co.za.mtn.pulsechecklist.devicefeatures.GetLocationActivity;
 import co.za.mtn.pulsechecklist.devicefeatures.PlaySoundActivity;
 import co.za.mtn.pulsechecklist.devicefeatures.SelectPhotoActivity;
 import co.za.mtn.pulsechecklist.devicefeatures.ShowContactsActivity;
@@ -22,7 +23,8 @@ public class DeviceFeaturesActivity extends AppCompatActivity {
             new DeviceFeature("Camera image", R.drawable.pulse_logo, 30, CaptureImageActivity.class),
             new DeviceFeature("Select image", R.drawable.pulse_logo, 10, SelectPhotoActivity.class),
             new DeviceFeature("Play sound", R.drawable.pulse_logo, 40, PlaySoundActivity.class),
-            new DeviceFeature("Show contact list", R.drawable.pulse_logo, 10, ShowContactsActivity.class)
+            new DeviceFeature("Show contact list", R.drawable.pulse_logo, 10, ShowContactsActivity.class),
+            new DeviceFeature("Get location", R.drawable.pulse_logo, 10, GetLocationActivity.class)
     };
 
     @Override
