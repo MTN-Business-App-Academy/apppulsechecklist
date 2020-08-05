@@ -8,4 +8,3 @@ Tracking your app development journey - app created through the MTN App Academy.
 * Show location.
 * Play sound.
 * Play video.
-* Calendar widget.
