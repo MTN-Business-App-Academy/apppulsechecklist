@@ -14,7 +14,7 @@ public class PlaySoundActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_sound);
-        
+
         initSound();
 
         findViewById(R.id.stop).setOnClickListener(new View.OnClickListener() {
@@ -27,7 +27,7 @@ public class PlaySoundActivity extends AppCompatActivity {
         findViewById(R.id.play).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mediaPlayer.stop();
+                mediaPlayer.start();
             }
         });
 
@@ -41,5 +41,16 @@ public class PlaySoundActivity extends AppCompatActivity {
 
     public void initSound() {
         mediaPlayer = MediaPlayer.create(this, R.raw.music);
+        mediaPlayer.setOnBufferingUpdateListener(new MediaPlayer.OnBufferingUpdateListener() {
+            @Override
+            public void onBufferingUpdate(MediaPlayer mediaPlayer, int i) {
+
+            }
+        });
+    }
+
+    public void onPause() {
+        super.onPause();
+        mediaPlayer.stop();
     }
 }

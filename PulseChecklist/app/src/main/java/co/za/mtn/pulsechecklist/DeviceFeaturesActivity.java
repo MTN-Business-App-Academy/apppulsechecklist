@@ -14,13 +14,15 @@ import co.za.mtn.pulsechecklist.data.DeviceFeature;
 import co.za.mtn.pulsechecklist.devicefeatures.CaptureImageActivity;
 import co.za.mtn.pulsechecklist.devicefeatures.PlaySoundActivity;
 import co.za.mtn.pulsechecklist.devicefeatures.SelectPhotoActivity;
+import co.za.mtn.pulsechecklist.devicefeatures.ShowContactsActivity;
 
 public class DeviceFeaturesActivity extends AppCompatActivity {
 
     private DeviceFeature[] features = {
-            new DeviceFeature("Camera image", R.drawable.pulse_logo, 10, CaptureImageActivity.class),
+            new DeviceFeature("Camera image", R.drawable.pulse_logo, 30, CaptureImageActivity.class),
             new DeviceFeature("Select image", R.drawable.pulse_logo, 10, SelectPhotoActivity.class),
-            new DeviceFeature("Play sound", R.drawable.pulse_logo, 10, PlaySoundActivity.class)
+            new DeviceFeature("Play sound", R.drawable.pulse_logo, 40, PlaySoundActivity.class),
+            new DeviceFeature("Show contact list", R.drawable.pulse_logo, 10, ShowContactsActivity.class)
     };
 
     @Override

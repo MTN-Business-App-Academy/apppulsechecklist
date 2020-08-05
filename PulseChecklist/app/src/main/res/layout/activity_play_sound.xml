@@ -30,7 +30,7 @@
 
             <TextView
                 android:id="@+id/textView"
-                android:text="Status: -"
+                android:text="Music"
                 android:textSize="16dp"
                 android:layout_centerHorizontal="true"
                 android:layout_margin="10dp"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DeviceFeaturesActivity">
+    tools:context=".devicefeatures.ShowContactsActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -12,7 +12,8 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            app:title="Device features"
+            app:title="Contact list"
+            app:subtitle="Show contact list from device"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
@@ -23,12 +24,10 @@
 
         <ListView
             android:id="@+id/listView"
-            tools:listitem="@layout/layout_device_feature_item_view"
             android:layout_below="@id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
     </RelativeLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
