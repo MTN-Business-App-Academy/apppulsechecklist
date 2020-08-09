@@ -3,17 +3,23 @@ package co.za.mtn.pulsechecklist;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActivityOptions;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Pair;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Space;
 import android.widget.Toast;
 
 public class SplashActivity extends AppCompatActivity {
+
+    Animation bottomFadeInAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +29,11 @@ public class SplashActivity extends AppCompatActivity {
         // Get relative layout
         RelativeLayout relativeLayout = findViewById(R.id.relativeLayout);
         // Get image view
-        ImageView imageView = findViewById(R.id.imageView);
+        final ImageView imageView = findViewById(R.id.imageView);
+
+        bottomFadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.bottom_fade_in);
+
+        imageView.setAnimation(bottomFadeInAnimation);
 
         // Click on relative layout
         relativeLayout.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +58,12 @@ public class SplashActivity extends AppCompatActivity {
                 //Create an Intent that will start the GetStartedActivity.
                 Intent mainIntent = new Intent(SplashActivity.this, GetStartedActivity.class);
 
-                SplashActivity.this.startActivity(mainIntent);
+                Pair[] animationPairs = new Pair[1];
+                animationPairs[0] = new Pair<View, String>(imageView, "logo_icon");
+
+                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(SplashActivity.this, animationPairs);
+
+                SplashActivity.this.startActivity(mainIntent, options.toBundle());
 
                 // Kill activity
                 SplashActivity.this.finish();

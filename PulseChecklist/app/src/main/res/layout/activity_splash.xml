@@ -9,15 +9,17 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:background="@color/colorPrimary"
+        android:background="@color/textColorLight"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/imageView"
-            android:src="@drawable/pulse_logo"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:src="@drawable/icon"
+            android:layout_width="100dp"
+            android:transitionName="logo_icon"
+            android:background="@android:color/white"
+            android:layout_height="100dp"
             android:layout_centerInParent="true"/>
 
     </RelativeLayout>

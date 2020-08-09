@@ -15,6 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:title="Get Started"
             android:background="?attr/colorPrimary"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme">
@@ -33,27 +34,46 @@
                 android:textColor="@android:color/black"
                 android:textAlignment="center"
                 android:textSize="20dp"
+
                 android:layout_centerHorizontal="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
                 android:id="@+id/name"
-                android:gravity="center"
-                android:hint="Enter your name"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/welcome"
-                android:layout_margin="20dp"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"/>
+                android:hint="Please enter your name..."
+                android:layout_height="wrap_content"
+                app:boxStrokeWidth="2dp"
+                android:paddingHorizontal="10dp"
+                app:boxStrokeColor="@color/darkGrey"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    ></com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
 
             <Button
                 android:id="@+id/button"
-                android:text="Get stated"
-                android:layout_centerHorizontal="true"
+                android:text="Get started"
+                android:paddingVertical="10dp"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+               android:layout_centerHorizontal="true"
                 android:layout_alignParentBottom="true"
                 android:layout_width="200dp"
-                android:layout_height="wrap_content"/>
+                android:textAlignment="center"
+
+                />
 
         </RelativeLayout>
 

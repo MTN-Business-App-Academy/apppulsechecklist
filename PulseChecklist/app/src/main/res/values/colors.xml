@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#feca04</color>
+    <color name="colorPrimary">#FECC2F</color>
+    <color name="colorPrimary10">#10FECC2F</color>
+    <color name="colorPrimary20">#20FECC2F</color>
+    <color name="colorPrimary30">#30FECC2F</color>
+    <color name="colorPrimary40">#40FECC2F</color>
+    <color name="colorPrimary50">#50FECC2F</color>
+    <color name="colorPrimary60">#60FECC2F</color>
+    <color name="colorPrimary70">#70FECC2F</color>
+    <color name="colorPrimary80">#80FECC2F</color>
+    <color name="colorPrimary90">#90FECC2F</color>
     <color name="colorPrimaryDark">#cba103</color>
-    <color name="colorAccent">#695405</color>
+    <color name="colorAccent">#5E17EB</color>
+    <color name="darkGrey">#4A4A4A</color>
+    <color name="textColorDark">#4A4A4A</color>
+    <color name="textColorLight">#ffffff</color>
 </resources>
