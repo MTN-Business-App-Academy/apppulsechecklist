@@ -8,6 +8,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
+<<<<<<< Updated upstream
+=======
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+>>>>>>> Stashed changes
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.Space;
@@ -18,6 +24,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
 
         // Get relative layout
@@ -48,10 +55,19 @@ public class SplashActivity extends AppCompatActivity {
                 //Create an Intent that will start the GetStartedActivity.
                 Intent mainIntent = new Intent(SplashActivity.this, GetStartedActivity.class);
 
+<<<<<<< Updated upstream
                 SplashActivity.this.startActivity(mainIntent);
+=======
+                Pair[] animationPairs = new Pair[1];
+                animationPairs[0] = new Pair<View, String>(imageView, "logo_icon");
+
+                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(SplashActivity.this, animationPairs);
+
+                startActivity(mainIntent, options.toBundle());
+>>>>>>> Stashed changes
 
                 // Kill activity
-                SplashActivity.this.finish();
+                finish();
             }
         }, 3000);
     }
